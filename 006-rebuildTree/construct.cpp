@@ -267,7 +267,7 @@ struct TreeNode
 class Solution
 {
 public:
-    struct TreeNode* reConstructBinaryTree(vector<int> pre,vector<int> in)
+    struct TreeNode* reConstructBinaryTree(vector<int> pre,vector<int> in)  //pre前序遍历数组 in中序遍历数组
     {
         //  前序遍历的长度跟中序遍历的长度应该相同
         if(pre.size( ) != in.size( ))
@@ -374,7 +374,7 @@ int __tmain( )
     TreeNode *root = solu.reConstructBinaryTree(preOrder, inOrder);
 
     cout <<"PreOrder" <<endl;   //  12345678
-    TreeNode::PreOrder(root);
+    TreeNode:: (root);
     cout <<endl;
     TreeNode::PreOrderDev(root);
     cout <<endl;
